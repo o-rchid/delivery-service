@@ -3,6 +3,9 @@ package org.delivery.api.account;
 import lombok.RequiredArgsConstructor;
 import org.delivery.api.account.model.AccountMeResponse;
 import org.delivery.api.common.api.Api;
+import org.delivery.api.common.error.ErrorCode;
+import org.delivery.api.common.error.UserErrorCode;
+import org.delivery.api.common.exception.ApiException;
 import org.delivery.db.account.AccountEntity;
 import org.delivery.db.account.AccountRepository;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -27,5 +30,15 @@ public class AccountApiController {
                 .build();
 
         return Api.OK(response);
+    }
+
+    @GetMapping("/error")
+    public Api<Object> error() {
+        return Api.ERROR(UserErrorCode.USER_NOT_FOUND, "에러");
+    }
+
+    @GetMapping("/api-exception")
+    public void apiException() {
+        throw new ApiException(ErrorCode.SERVER_ERROR);
     }
 }
