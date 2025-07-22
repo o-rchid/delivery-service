@@ -18,7 +18,7 @@ public class WebConfig implements WebMvcConfigurer {
     private final UserSessionResolver userSessionResolver;
 
     private List<String> OPEN_API = List.of(
-            "/oepn-api/**"
+            "/open-api/**"
     );
 
     private List<String> DEFAULT_EXCLUDE = List.of(
