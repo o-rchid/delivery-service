@@ -1,6 +1,13 @@
+pluginManagement {
+    plugins {
+        id 'org.jetbrains.kotlin.jvm' version '2.0.21'
+    }
+}
 rootProject.name = 'service'
 include 'api'
 include 'db'
 
 
 include 'store-admin'
+include 'common'
+include 'common'

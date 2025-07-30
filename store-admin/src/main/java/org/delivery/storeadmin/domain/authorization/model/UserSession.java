@@ -1,4 +1,4 @@
-package org.delivery.storeadmin.domain.user.authorization.model;
+package org.delivery.storeadmin.domain.authorization.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
