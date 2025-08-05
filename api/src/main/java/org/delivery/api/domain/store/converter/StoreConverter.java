@@ -23,6 +23,7 @@ public class StoreConverter {
                     .address(request.getAddress())
                     .category(request.getStoreCategory())
                     .minimumAmount(request.getMinimumAmount())
+                    .minimumDeliveryAmount(request.getMinimumDeliveryAmount())
                     .thumbnailUrl(request.getThumbnailUrl())
                     .phoneNumber(request.getPhoneNumber())
                     .build();
