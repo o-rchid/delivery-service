@@ -6,7 +6,7 @@ import org.springframework.cloud.gateway.filter.factory.AbstractGatewayFilterFac
 import org.springframework.stereotype.Component
 
 @Component
-class ServiceApiFilter : AbstractGatewayFilterFactory<ServiceApiFilter.Config>(Config::class.java) {
+class ServiceApiPublicFilter : AbstractGatewayFilterFactory<ServiceApiPublicFilter.Config>(Config::class.java) {
 
     companion object : Log
 
